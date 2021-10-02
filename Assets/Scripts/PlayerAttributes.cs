@@ -10,7 +10,7 @@ public class PlayerAttributes : MonoBehaviour
     [Tooltip("In ms^-1")] public float moveSpeed = 5f;
 
     // jump force
-    [Tooltip("In ms^-1")] public float jumpForce = 2f;
+    [Tooltip("In ms^-1")] public float jumpForce = 10f;
 
     // maximum jump height
     [Tooltip("In ms^-1")] public float jumpHeight = 4f;

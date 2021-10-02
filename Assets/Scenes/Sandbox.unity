@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 1895011}
   - component: {fileID: 1895013}
   - component: {fileID: 1895014}
+  - component: {fileID: 1895015}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -203,8 +204,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.04, y: -2.8, z: 0}
-  m_LocalScale: {x: 1, y: 2.4770315, z: 1}
+  m_LocalPosition: {x: -4.78, y: -3.075, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -268,9 +269,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345b8758f908a8849b327a0d35579cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 2
-  jumpHeight: 4
+  moveSpeed: 6
+  jumpForce: 7.5
+  jumpHeight: 1
 --- !u!114 &1895014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +284,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0dcc3ee79093f4d872ee8c2a615709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1895015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11f4cf5100fd3b42826d1873586d7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMove: 0
+  yMove: 0
+  jumpPressed: 0
 --- !u!1 &338648935
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +548,14 @@ PrefabInstance:
     - target: {fileID: 817998884816255150, guid: 9f24e4631a572544a9269a9b9b91f380, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 817998884816255150, guid: 9f24e4631a572544a9269a9b9b91f380, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 53.923046
+      objectReference: {fileID: 0}
+    - target: {fileID: 817998884816255150, guid: 9f24e4631a572544a9269a9b9b91f380, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25.039143
       objectReference: {fileID: 0}
     - target: {fileID: 817998884816255150, guid: 9f24e4631a572544a9269a9b9b91f380, type: 3}
       propertyPath: m_LocalPosition.x
