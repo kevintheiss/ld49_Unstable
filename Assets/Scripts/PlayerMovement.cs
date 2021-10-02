@@ -31,8 +31,8 @@ public class PlayerMovement : MonoBehaviour
      */
     void ProcessMovement()
     {
-        float xMove = Input.GetAxisRaw("Horizontal") * Time.deltaTime * playerAttributes.moveSpeed;
+        float xMove = Input.GetAxisRaw("Horizontal");
 
-        transform.Translate(xMove, 0f, 0f);
+        playerRigidBody.velocity = new Vector3(xMove, 0f, 0f) * playerAttributes.moveSpeed;
     }
 }
